@@ -1,7 +1,7 @@
 (define (two-lrg x y z)
-	(cond((and (> x y) ( > y z)) (+ (square x) (square y))))
-  (cond((and (> x z) ( > z y)) (+ (square x) (square z))))
-  (cond((and (> y z) ( > z x)) (+ (square y) (square z))))
-
-
-  )
+	(cond ((and (> x y) ( > y z)) (+ (square x) (square y)))
+   ((and (> x z) ( > z y)) (+ (square x) (square z)))
+   ((and (> y z) ( > z x)) (+ (square y) (square z)))
+   ((and (> y x) ( > z y)) (+ (square y) (square z)))
+   ((and (> x y) ( > z x)) (+ (square x) (square z)))
+   ((and (> y x) ( > x z)) (+ (square x) (square y)))))
